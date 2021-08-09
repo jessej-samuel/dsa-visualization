@@ -3,7 +3,7 @@
 
 int main()
 {
-    float cell_size = 7.0;
+    float cell_size = 8.0;
     int cell_count = 60;
     int grid_length = cell_size * cell_count + cell_count + 2;
     sf::RectangleShape grid(sf::Vector2f(grid_length, grid_length)); // Set the bg of the cells to white
@@ -11,7 +11,7 @@ int main()
     sf::RectangleShape cell(sf::Vector2f(cell_size, cell_size));
     // cell.setOrigin(cell_size / 2, cell_size / 2);
     cell.setFillColor(sf::Color::Black);
-    grid.setFillColor(sf::Color::White);
+    grid.setFillColor(sf::Color(128, 128, 128, 225));
 
     while (window.isOpen())
     {
