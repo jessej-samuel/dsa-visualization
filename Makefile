@@ -6,10 +6,10 @@ compile:
 	g++ -c *.cpp
 
 link:
-	g++ *.o -o main -lsfml-graphics -lsfml-window -lsfml-system
+	g++ *.o -o bubblesort -lsfml-graphics -lsfml-window -lsfml-system
 
 clean:
 	del *.o
 
 run:
-	main.exe
+	bubblesort.exe
